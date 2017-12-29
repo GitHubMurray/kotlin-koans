@@ -1,7 +1,9 @@
 package i_introduction._1_Java_To_Kotlin_Converter
 
 fun todoTask1(collection: Collection<Int>): String {
-    return JavaCode1().task1(collection)
+    //return JavaCode1().task1(collection)
+    val str = collection.toString()
+    return str.replace('[', '{').replace(']', '}')
 }
 
 fun task1(collection: Collection<Int>): String {
